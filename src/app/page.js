@@ -87,7 +87,7 @@ export default function Home() {
             </div>
 
             <Container className=''>
-                <div className='relative w-full h-full'>
+                <div className='relative w-full h-screen'>
                     <div className='absolute inset-0'>
                         <video
                             autoPlay

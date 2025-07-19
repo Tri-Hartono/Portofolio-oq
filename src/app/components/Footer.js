@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <div className='pt-40 pb-20 padding-custome'>
-            <div className='flex flex-col md:flex-row items-center justify-between'>
+        <div className='md:pt-40 pb-10 md:pb-20 padding-custome'>
+            <div className='flex flex-col md:flex-row md:items-center justify-between'>
                 <div>
                     <h3 className='hover:text-[#EB5939]'>Dribbble</h3>
                     <h3 className='hover:text-[#EB5939]'>Youtube</h3>

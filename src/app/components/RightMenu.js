@@ -9,7 +9,7 @@ export default function RightMenu() {
     };
 
     return (
-        <div className='fixed top-0 right-0 p-6 lg:p-20 z-20 h-screen flex items-center justify-between flex-col'>
+        <div className='fixed right-0 top-0 z-20 py-10 px-6 lg:py-20 lg:px-20  h-screen flex items-center justify-between flex-col'>
             <div className='space-y-2'>
                 <h4 className='hover:text-[#EB5939]'>ABOUT</h4>
                 <h4 className='hover:text-[#EB5939]'>WORK</h4>

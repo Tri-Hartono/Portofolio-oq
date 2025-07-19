@@ -4,7 +4,7 @@ import Container from './components/Container';
 export default function Hero() {
     return (
         <Container className=''>
-            <div className='text-center relative w-full h-full flex items-center justify-center'>
+            <div className='text-center relative w-full h-screen flex items-center justify-center'>
                 <div className='relative z-10'>
                     <h1>MAKING </h1>
                     <h1 className='text-[#EB5939]'>GOOD</h1>

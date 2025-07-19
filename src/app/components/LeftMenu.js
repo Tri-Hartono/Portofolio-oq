@@ -11,7 +11,7 @@ import React from 'react';
 
 export default function LeftMenu() {
     return (
-        <div className='fixed left-0 z-20 p-6 lg:p-20  h-screen flex items-center justify-between flex-col'>
+        <div className='fixed left-0 z-20 py-10 px-6 lg:py-20 lg:px-20  h-screen flex items-center justify-between flex-col'>
             <div>
                 <FontAwesomeIcon icon={faSquarespace} className='w-10' />
             </div>
