@@ -1,26 +1,64 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    /* --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono); */
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0d0d0d;
+        --foreground: #b7ab98;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@layer base {
+    h1 {
+        @apply text-[120px] lg:text-[240px] font-bold leading-32 lg:leading-52 text-inherit;
+    }
+    h2 {
+        @apply text-[60px] lg:text-[100px] font-bold leading-20 lg:leading-32;
+    }
+    h3 {
+        @apply text-[30px] lg:text-[60px] font-bold leading-16;
+    }
+    p {
+        @apply font-bold;
+    }
+    h4 {
+        @apply font-extrabold text-xl;
+    }
+}
+@layer components {
+    .btn {
+        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2;
+    }
+    .padding-custome {
+        @apply px-20 lg:px-80;
+    }
+    .bg-custome-dark {
+        @apply bg-[#0d0d0d];
+    }
+    .bg-color-light {
+        @apply bg-[#B7AB98];
+    }
+    .color-dark {
+        @apply text-[#0d0d0d];
+    }
+    .text-color-light {
+        @apply text-[#B7AB98];
+    }
 }
