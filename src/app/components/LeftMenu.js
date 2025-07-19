@@ -15,22 +15,22 @@ export default function LeftMenu() {
             <div>
                 <FontAwesomeIcon icon={faSquarespace} className='w-10' />
             </div>
-            <div className='space-y-10'>
+            <div className='space-y-2 md:space-y-10'>
                 <FontAwesomeIcon
                     icon={faDribbble}
-                    className='w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-8 hover:text-[#EB5939]'
                 />
                 <FontAwesomeIcon
                     icon={faYoutube}
-                    className='w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-8 hover:text-[#EB5939]'
                 />
                 <FontAwesomeIcon
                     icon={faInstagram}
-                    className='w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-8 hover:text-[#EB5939]'
                 />
                 <FontAwesomeIcon
                     icon={faLinkedin}
-                    className='w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-8 hover:text-[#EB5939]'
                 />
             </div>
         </div>

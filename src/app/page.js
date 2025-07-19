@@ -30,7 +30,7 @@ export default function Home() {
                         <div className='w-full py-10 relative group hover:text-[#0d0d0d]'>
                             <div className='bg-[#EB5939] absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out'></div>
                             <div className='absolute bottom-0 left-0 w-full h-[1px] bg-color-light opacity-50'></div>
-                            <div className='flex padding-custome gap-20 relative z-10'>
+                            <div className='flex padding-custome gap-6 md:gap-20 relative z-10'>
                                 <h2>Now</h2>
                                 <div className='space-y-1'>
                                     <h2>Design Lead</h2>
@@ -41,7 +41,7 @@ export default function Home() {
                         <div className='w-full py-10 relative group hover:text-[#0d0d0d]'>
                             <div className='bg-[#EB5939] absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out'></div>
                             <div className='absolute bottom-0 left-0 w-full h-[1px] bg-color-light opacity-50'></div>
-                            <div className='flex padding-custome gap-20 relative z-10'>
+                            <div className='flex padding-custome gap-6 md:gap-20 relative z-10'>
                                 <h2>2016</h2>
                                 <div className='space-y-1'>
                                     <h2>Senior Product Designer</h2>
@@ -52,7 +52,7 @@ export default function Home() {
                         <div className='w-full py-10 relative group hover:text-[#0d0d0d]'>
                             <div className='bg-[#EB5939] absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out'></div>
                             <div className='absolute bottom-0 left-0 w-full h-[1px] bg-color-light opacity-50'></div>
-                            <div className='flex padding-custome gap-20 relative z-10'>
+                            <div className='flex padding-custome gap-6 md:gap-20 relative z-10'>
                                 <h2>2015</h2>
                                 <div className='space-y-1'>
                                     <h2>Art Director</h2>
@@ -63,7 +63,7 @@ export default function Home() {
                         <div className='w-full py-10 relative group hover:text-[#0d0d0d]'>
                             <div className='bg-[#EB5939] absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out'></div>
                             <div className='absolute bottom-0 left-0 w-full h-[1px] bg-color-light opacity-50'></div>
-                            <div className='flex padding-custome gap-20 relative z-10'>
+                            <div className='flex padding-custome gap-6 md:gap-20 relative z-10'>
                                 <h2>2014</h2>
                                 <div className='space-y-1'>
                                     <h2>Flash Designer</h2>
