@@ -27,19 +27,19 @@ body {
 
 @layer base {
     h1 {
-        @apply text-[60px] md:text-[120px] lg:text-[240px] font-bold leading-20 md:leading-32 lg:leading-52 text-inherit;
+        @apply text-[60px] md:text-[120px] lg:text-[140px] font-extrabold leading-20 md:leading-32 text-inherit;
     }
     h2 {
-        @apply text-[40px] md:text-[60px] lg:text-[100px] font-bold leading-10 md:leading-20 lg:leading-32;
+        @apply text-[30px] md:text-[40px] lg:text-[60px] xl:text-[80px] font-extrabold leading-10 md:leading-20;
     }
     h3 {
-        @apply text-[20px] md:text-[30px] lg:text-[60px] font-bold leading-8 md:leading-16;
+        @apply text-[20px] md:text-[30px] lg:text-[60px] font-extrabold leading-8 md:leading-16;
     }
     p {
-        @apply font-bold;
+        @apply font-extrabold;
     }
     h4 {
-        @apply font-extrabold text-xl;
+        @apply font-extrabold text-lg md:text-2xl;
     }
 }
 @layer components {
@@ -60,5 +60,8 @@ body {
     }
     .text-color-light {
         @apply text-[#B7AB98];
+    }
+    .text-color-orange {
+        @apply text-[#EB5939];
     }
 }

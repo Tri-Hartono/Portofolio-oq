@@ -11,26 +11,26 @@ import React from 'react';
 
 export default function LeftMenu() {
     return (
-        <div className='fixed left-0 z-20 py-10 px-6 lg:py-20 lg:px-20  h-screen flex items-center justify-between flex-col'>
+        <div className='fixed left-0 top-0 z-20 pt-10 pb-20 px-6 lg:pt-20 lg:pb-20 lg:px-20   flex items-center justify-between flex-col h-[98vh] md:h-screen'>
             <div>
                 <FontAwesomeIcon icon={faSquarespace} className='w-10' />
             </div>
-            <div className='space-y-2 md:space-y-10'>
+            <div className='space-y-4 md:space-y-6'>
                 <FontAwesomeIcon
                     icon={faDribbble}
-                    className='w-4 md:w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-6 hover:text-[#EB5939]'
                 />
                 <FontAwesomeIcon
                     icon={faYoutube}
-                    className='w-4 md:w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-6 hover:text-[#EB5939]'
                 />
                 <FontAwesomeIcon
                     icon={faInstagram}
-                    className='w-4 md:w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-6 hover:text-[#EB5939]'
                 />
                 <FontAwesomeIcon
                     icon={faLinkedin}
-                    className='w-4 md:w-8 hover:text-[#EB5939]'
+                    className='w-4 md:w-6 hover:text-[#EB5939]'
                 />
             </div>
         </div>
