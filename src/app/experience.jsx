@@ -10,10 +10,10 @@ export default function Experience() {
         margin: '-20% 0px -20% 0px',
     });
 
-    const before = 'Over';
-    const colored = ' a decade';
+    // const before = 'Over';
+    const colored = '5 years';
     const after =
-        ' of experience in interactive design and working with some of the most talented people in the business';
+        ' of experience creating dynamic and engaging animations for a variety of media. My work includes projects for TV commercials,digital campaigns and social media content.';
 
     const renderText = (text, delayOffset = 0, className = '') =>
         text.split('').map((char, i) => (
@@ -26,7 +26,7 @@ export default function Experience() {
                 transition={{ delay: (delayOffset + i) * 0.03 }}
                 className={className}
             >
-                {char === ' ' ? '\u00A0' : char}
+                <span>{char === ' ' ? '\u00A0' : char}</span>
             </motion.h2>
         ));
 
@@ -36,7 +36,7 @@ export default function Experience() {
                 ref={ref}
                 initial='hidden'
                 animate={isInView ? 'visible' : 'hidden'}
-                className='flex flex-col justify-center padding-custome w-full h-full gap-4'
+                className='flex flex-col justify-center padding-custome w-full h-full gap-4 relative z-20'
             >
                 <motion.h4
                     initial={{ opacity: 0, y: 10 }}
@@ -44,15 +44,17 @@ export default function Experience() {
                         isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                     }
                     transition={{ duration: 0.4 }}
-                    className='mix-blend-difference mask-target'
+                    className='mask-target'
                 >
-                    Experience
+                    <span>Experience</span>
                 </motion.h4>
 
-                <motion.div className='mix-blend-difference mask-target text-2xl flex flex-wrap '>
-                    {renderText(before)}
-                    {renderText(colored, before.length, 'text-[#EB5939]')}
-                    {renderText(after, before.length + colored.length)}
+                <motion.div className='mask-target'>
+                    <span className=' text-2xl flex flex-wrap '>
+                        {/* {renderText(before)} */}
+                        {renderText(colored, 0, 'text-color-3 ')}
+                        {renderText(after, 0, 'text-white ')}
+                    </span>
                 </motion.div>
             </motion.div>
         </Container>

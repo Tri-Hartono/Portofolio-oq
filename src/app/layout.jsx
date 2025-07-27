@@ -6,6 +6,7 @@ import RightMenu from './components/RightMenu';
 import Cursor from './components/Cursor';
 import LoadingScreen from './components/LoadingScreen';
 import LoadingScreenWithSpinner from './components/LoadingScreenWithSpinner';
+import { CursorProvider } from './components/CursorContext';
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -31,9 +32,13 @@ export default function RootLayout({ children }) {
                 className={`${myFont.className} antialiased w-screen overflow-x-hidden text-[#B7AB98]`}
             >
                 <LoadingScreenWithSpinner />
+                <Cursor />
+
+                {/* <CursorProvider> */}
                 <LeftMenu />
                 {children}
                 <RightMenu />
+                {/* </CursorProvider> */}
             </body>
         </html>
     );

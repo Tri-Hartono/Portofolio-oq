@@ -31,7 +31,7 @@ export default function LoadingScreenWithSpinner() {
         <AnimatePresence>
             {isLoading && (
                 <motion.div
-                    className='fixed top-0 left-0 z-[9999] flex h-screen w-screen items-center justify-center bg-[#0d0d0d] text-[#EB5939]'
+                    className='fixed top-0 left-0 z-[9999] flex h-screen w-screen items-center justify-center bg-custome-dark text-color-3'
                     initial={{ opacity: 1 }}
                     exit={{ y: '-100%' }}
                     transition={{ duration: 1 }}
@@ -45,7 +45,7 @@ export default function LoadingScreenWithSpinner() {
                         >
                             {/* Background circle */}
                             <circle
-                                stroke='#333'
+                                stroke='#0A376E'
                                 fill='transparent'
                                 strokeWidth={stroke}
                                 r={normalizedRadius}
@@ -54,7 +54,7 @@ export default function LoadingScreenWithSpinner() {
                             />
                             {/* Progress circle */}
                             <circle
-                                stroke='#EB5939'
+                                stroke='#FDBB03'
                                 fill='transparent'
                                 strokeWidth={stroke}
                                 strokeLinecap='round'

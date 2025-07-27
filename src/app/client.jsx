@@ -35,7 +35,7 @@ export default function Client() {
                 ref={ref}
                 initial='hidden'
                 animate={isInView ? 'visible' : 'hidden'}
-                className='flex flex-col justify-center padding-custome w-full h-full gap-4 bg-custome-dark'
+                className='flex flex-col justify-center padding-custome w-full h-full gap-4 bg-custome-dark relative z-0'
             >
                 <motion.h4
                     initial={{ opacity: 0, y: 10 }}
@@ -43,14 +43,14 @@ export default function Client() {
                         isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                     }
                     transition={{ duration: 0.4 }}
-                    className='mix-blend-difference mask-target'
+                    className=' mask-target'
                 >
                     Client
                 </motion.h4>
 
-                <motion.div className='mix-blend-difference mask-target flex flex-wrap '>
+                <motion.div className=' mask-target flex flex-wrap '>
                     {renderText(before)}
-                    {renderText(colored, before.length, 'text-[#EB5939]')}
+                    {renderText(colored, before.length, 'text-color-3')}
                     {renderText(after, before.length + colored.length)}
                 </motion.div>
             </motion.div>

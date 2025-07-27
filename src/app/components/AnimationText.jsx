@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion';
 export default function AnimationText({
     text,
     className = '',
-    as: Component = 'div', // default ke span
+    as: Component = 'span', // Ubah default ke span
     delay = 0.06,
     duration = 0.4,
     ease = 'easeInOut',
@@ -41,13 +41,14 @@ export default function AnimationText({
             variants={container}
             initial='hidden'
             animate={isInView ? 'show' : 'hidden'}
-            className={className}
+            className={`mask-target ${className}`} // penting: .mask-target
         >
             {text.split('').map((char, index) => (
                 <motion.span
                     key={index}
                     variants={child}
                     style={{ whiteSpace: 'pre' }}
+                    className='inline-block' // penting agar bisa dideteksi satuan
                 >
                     <Component className='inline-block'>{char}</Component>
                 </motion.span>
