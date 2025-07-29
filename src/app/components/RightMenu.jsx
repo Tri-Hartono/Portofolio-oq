@@ -9,16 +9,16 @@ export default function RightMenu() {
     };
 
     return (
-        <div className='fixed right-0 top-0 z-20 pt-10 pb-20 px-6 lg:pt-20 lg:pb-20 lg:px-20   flex items-center justify-between flex-col h-[98vh] md:h-screen'>
-            <div className='md:space-y-2'>
-                <h4 className='text-color-3'>ABOUT</h4>
-                <h4 className='text-color-3'>WORK</h4>
-                <h4 className='text-color-3'>CONTACT</h4>
+        <div className='fixed right-0 top-0 z-20 pt-10 pb-20 px-2 mb:px-6 lg:pt-20 lg:pb-20 lg:px-20   flex items-center justify-between flex-col h-[98vh] md:h-screen'>
+            <div className=''>
+                <h4 className='text-color-3 hover:text-black'>ABOUT</h4>
+                <h4 className='text-color-3 hover:text-black'>WORK</h4>
+                <h4 className='text-color-3 hover:text-black'>CONTACT</h4>
             </div>
             <h4
                 onClick={toggleSound}
-                className={`cursor-pointer -rotate-90 transition-transform duration-500 hover:scale-105 text-lg font-semibold mb-6 ${
-                    soundOn ? 'text-color-3' : 'text-red-500'
+                className={`cursor-pointer -rotate-90 transition-transform duration-500 hover:scale-105  mb-6 ${
+                    soundOn ? 'text-white' : 'text-red-500'
                 }`}
             >
                 SOUND{' '}

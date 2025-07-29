@@ -25,7 +25,7 @@ export default function Hero() {
                     />
                     <AnimationText text='VISUAL' duration={3.6} as='h1' />
                 </div>
-                <div className='absolute inset-0 bg-color'>
+                <div className='absolute inset-0 bg-[url(/assets/image/bg-hero.png)]  bg-cover bg-center'>
                     {/* Optional: background video */}
                 </div>
             </div>

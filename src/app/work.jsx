@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './components/Container';
 import AnimationText from './components/AnimationText';
+import Image from 'next/image';
 
 export default function Work() {
     // let Work = [
@@ -22,7 +23,11 @@ export default function Work() {
     // ];
     return (
         <>
-            <div className='w-full h-screen md:h-full py-10 flex flex-col items-center justify-center '>
+            <div className='w-screen overflow-x-hidden h-screen  py-10 flex flex-col items-center justify-center relative'>
+                {/* Mouse */}
+                <div className='absolute w-1/4 bg-[url(/assets/image/mouse_left_2.png)] h-1/2 bg-contain bg-no-repeat bg-center -left-[14%]   top-0'></div>
+                <div className='absolute w-1/2 bg-[url(/assets/image/mouse_right.png)] h-full bg-contain bg-no-repeat bg-center -bottom-[20%] -right-[20%]'></div>
+                {/* end mouse */}
                 <div className='w-full relative hover:text-[#0d0d0d] padding-custome group cursor-pointer'>
                     <div className='bg-custome-light absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-500 ease-in-out'></div>
                     {/* Top border line */}

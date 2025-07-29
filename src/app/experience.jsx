@@ -36,7 +36,7 @@ export default function Experience() {
                 ref={ref}
                 initial='hidden'
                 animate={isInView ? 'visible' : 'hidden'}
-                className='flex flex-col justify-center padding-custome w-full h-full gap-4 relative z-20'
+                className='flex flex-col justify-center padding-custome w-full h-full gap-4 relative z-20 bg-[url(/assets/image/bg-experience.png)]  bg-cover bg-center'
             >
                 <motion.h4
                     initial={{ opacity: 0, y: 10 }}
