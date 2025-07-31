@@ -23,7 +23,7 @@ export default function LeftMenu() {
                 {hovered ? (
                     <>
                         <Image
-                            src='/logo-white.png'
+                            src='/assets/image/logo-oq.png'
                             alt='logo'
                             width={100}
                             height={100}
@@ -32,7 +32,7 @@ export default function LeftMenu() {
                 ) : (
                     <>
                         <Image
-                            src='/logo-yellow.png'
+                            src='/assets/image/logo-oq.png'
                             alt='logo'
                             width={100}
                             height={100}

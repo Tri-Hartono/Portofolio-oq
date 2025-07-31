@@ -36,14 +36,21 @@ export default function LoadingScreenWithSpinner() {
                     exit={{ y: '-100%' }}
                     transition={{ duration: 1 }}
                 >
-                    <div className='relative w-[150px] h-[150px]'>
-                        {/* SVG Circle */}
-                        <svg
+                    {/* <Image
+                        src='/logo-oq.gif'
+                        alt='logo'
+                        width={100}
+                        height={100}
+                    /> */}
+                    <img src='/assets/image/logo-oq.gif' alt='logo' />
+                    {/* <div className='relative w-[150px] h-[150px]'> */}
+                    {/* SVG Circle */}
+                    {/* <svg
                             height='100%'
                             width='100%'
                             viewBox={`0 0 ${radius * 2} ${radius * 2}`}
                         >
-                            {/* Background circle */}
+                            Background circle
                             <circle
                                 stroke='#0A376E'
                                 fill='transparent'
@@ -52,8 +59,8 @@ export default function LoadingScreenWithSpinner() {
                                 cx={radius}
                                 cy={radius}
                             />
-                            {/* Progress circle */}
-                            <circle
+                            Progress circle */}
+                    {/* <circle
                                 stroke='#FDBB03'
                                 fill='transparent'
                                 strokeWidth={stroke}
@@ -69,13 +76,13 @@ export default function LoadingScreenWithSpinner() {
                                     transition: 'stroke-dashoffset 0.2s ease',
                                 }}
                             />
-                        </svg>
+                        </svg> */}
 
-                        {/* Percentage text */}
-                        <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold'>
+                    {/* Percentage text */}
+                    {/* <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold'>
                             {count}%
                         </div>
-                    </div>
+                    </div> */}
                 </motion.div>
             )}
         </AnimatePresence>

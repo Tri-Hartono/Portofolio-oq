@@ -36,9 +36,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang='en'>
+        <html lang='en' suppressHydrationWarning>
             <body
                 className={`${myFont.className} bg-custome-dark antialiased w-screen overflow-x-hidden text-white relative`}
+                suppressHydrationWarning
             >
                 <div
                     className='w-[20%] h-full absolute left-0 top-0 z-0 pointer-events-none'
