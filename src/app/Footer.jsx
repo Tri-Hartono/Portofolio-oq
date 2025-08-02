@@ -7,7 +7,10 @@ import Container from './components/Container';
 export default function Footer() {
     return (
         <Container className='relative'>
-            <div className='absolute inset-0 bg-[url(/assets/image/bg-hero.png)]  bg-cover bg-center'>
+            <div
+                className='absolute inset-0 bg-[url(/assets/image/bg-hero.png)]  bg-cover bg-center'
+                id='contact'
+            >
                 {/* Optional: background video */}
             </div>
             {/* <Cursor /> Kursor aktif */}

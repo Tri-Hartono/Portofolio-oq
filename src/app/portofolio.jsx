@@ -37,25 +37,29 @@ export default function Portfolio() {
     };
 
     return (
-        <div className=' md:w-[70%] md:h-[90%] relative z-40'>
+        <div className='w-[80%] md:h-[90%]  z-40 relative'>
             <Carousel
                 setApi={setCarouselApi}
                 opts={{ loop: true }}
-                className='relative '
+                className='  w-full'
             >
-                <CarouselContent>
+                <CarouselContent x={false}>
                     {ImagePorfolio.Portofolio.map((item, index) => (
                         <CarouselItem key={index}>
                             <img
                                 src={item.image}
                                 alt={`Slide ${index}`}
-                                className='w-full h-auto object-cover'
+                                className='w-full h-auto  object-cover'
                             />
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className='text-black bg-custome-light' />
-                <CarouselNext className='text-black bg-custome-light' />
+                <div className='absolute  left-10 top-1/2 '>
+                    <CarouselPrevious className='text-black bg-custome-light' />
+                </div>
+                <div className='absolute  right-10 top-1/2 '>
+                    <CarouselNext className='text-black bg-custome-light' />
+                </div>
             </Carousel>
 
             {/* Dot indikator */}
@@ -64,7 +68,7 @@ export default function Portfolio() {
                     <button
                         key={index}
                         onClick={() => scrollToIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                        className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
                             currentIndex === index
                                 ? 'bg-custome-light'
                                 : 'bg-black'

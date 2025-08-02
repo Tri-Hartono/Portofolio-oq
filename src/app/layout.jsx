@@ -1,6 +1,5 @@
 // import { Geist, Geist_Mono } from 'next/font/google';
 import { Poppins } from 'next/font/google';
-import { Button } from '@/app/components/ui/button';
 import './globals.css';
 import localFont from 'next/font/local';
 import LeftMenu from './components/LeftMenu';

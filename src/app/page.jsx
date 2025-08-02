@@ -14,11 +14,15 @@ export default function Home() {
     return (
         <div className=''>
             <Hero />
-            <About />
-            <Work />
+            <div id='about'>
+                <About />
+            </div>
+            <div id='work'>
+                <Work />
+            </div>
 
             {/* <div className='bg-[url(/assets/image/work-2400.jpg)] bg-fixed bg-cover bg-center'> */}
-            <div className='bg-custome-dark w-full 0'>
+            <div className='bg-custome-dark w-full 0' id='experience'>
                 {/* <Experience /> */}
                 <div className='w-full py-10 bg-[url(/assets/image/bg-laptop.png)] bg-cover bg-center'>
                     <div className='w-full py-10 relative group hover:text-[#0d0d0d]'>
@@ -103,10 +107,15 @@ export default function Home() {
                 {/* <Client /> */}
             </div>
 
-            <div className='relative w-screen h-screen flex items-center justify-center '>
+            <div
+                className='relative w-screen h-screen flex items-center justify-center '
+                id='project'
+            >
                 <Portfolio />
             </div>
-            <Footer />
+            <div id='contact'>
+                <Footer />
+            </div>
         </div>
     );
 }
