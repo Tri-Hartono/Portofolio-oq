@@ -36,13 +36,13 @@ export default function RightMenu() {
     };
 
     return (
-        <div className='fixed right-0 top-0 z-20 pt-10 pb-20 px-2 flex flex-col items-center justify-between h-[98vh] md:h-screen'>
-            <div className='space-y-2'>
+        <div className='fixed right-0 top-0 z-50 pt-10 pb-20 px-2 flex flex-col items-center justify-between h-[98vh] md:h-screen'>
+            <div className=' space-y-1 md:space-y-2'>
                 {menuItems.map((item) => (
                     <h4
                         key={item.id}
                         onClick={() => scrollToSection(item.id)}
-                        className='text-color-3 hover:text-black cursor-pointer'
+                        className='text-white hover:text-yellow-600 cursor-pointer'
                     >
                         {item.label}
                     </h4>

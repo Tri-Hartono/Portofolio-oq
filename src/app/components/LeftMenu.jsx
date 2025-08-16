@@ -20,43 +20,29 @@ export default function LeftMenu() {
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
             >
-                {hovered ? (
-                    <>
-                        <Image
-                            src='/assets/image/logo-oq.png'
-                            alt='logo'
-                            width={100}
-                            height={100}
-                        />
-                    </>
-                ) : (
-                    <>
-                        <Image
-                            src='/assets/image/logo-oq.png'
-                            alt='logo'
-                            width={100}
-                            height={100}
-                        />
-                    </>
-                )}
+                <img
+                    src='/assets/image/logo-oq.png'
+                    alt='logo'
+                    className='w-20 h-20 md:w-24 md:h-24'
+                />
             </div>
             <div className='space-y-4 md:space-y-6 flex flex-col z-20 relative'>
                 <FontAwesomeIcon
                     icon={faDribbble}
-                    className='text-xl  lg:text-2xl text-color-3 hover:text-black'
+                    className='text-lg  lg:text-2xl text-color-3 hover:text-black'
                 />
 
                 <FontAwesomeIcon
                     icon={faYoutube}
-                    className='text-xl  lg:text-2xl text-color-3 hover:text-black'
+                    className='text-lg  lg:text-2xl text-color-3 hover:text-black'
                 />
                 <FontAwesomeIcon
                     icon={faInstagram}
-                    className='text-xl  lg:text-2xl text-color-3 hover:text-black'
+                    className='text-lg  lg:text-2xl text-color-3 hover:text-black'
                 />
                 <FontAwesomeIcon
                     icon={faLinkedin}
-                    className='text-xl  lg:text-2xl text-color-3 hover:text-black'
+                    className='text-lg  lg:text-2xl text-color-3 hover:text-black'
                 />
             </div>
         </div>
