@@ -29,13 +29,13 @@ export default function Home() {
                         <div className='bg-custome-light absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out'></div>
                         <div className='absolute bottom-0 left-0 w-full h-[1px] bg-custome-light opacity-50'></div>
                         <div className='flex padding-custome gap-6 md:gap-20 relative z-10'>
-                            <AnimationText text='Now' as='h2' />
+                            {/* <AnimationText text='Now' as='h2' /> */}
                             <div className='space-y-1'>
                                 <AnimationText text='PSJTV' as='h2' />
-                                <AnimationText
+                                {/* <AnimationText
                                     text='Fantasy Interactive'
                                     as='p'
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
@@ -43,13 +43,13 @@ export default function Home() {
                         <div className='bg-custome-light absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out'></div>
                         <div className='absolute bottom-0 left-0 w-full h-[1px] bg-custome-light opacity-50'></div>
                         <div className='flex padding-custome gap-6 md:gap-20 relative z-10'>
-                            <AnimationText text='2016' as='h2' />
+                            {/* <AnimationText text='2016' as='h2' /> */}
                             <div className='space-y-1'>
                                 <AnimationText text='RUANG GURU' as='h2' />
-                                <AnimationText
+                                {/* <AnimationText
                                     text='Fantasy Interactive'
                                     as='p'
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
@@ -62,13 +62,13 @@ export default function Home() {
                                 <h2>Art Director</h2>
                                 <p>Fantasy Interactive</p>
                             </div> */}
-                            <AnimationText text='2015' as='h2' />
+                            {/* <AnimationText text='2015' as='h2' /> */}
                             <div className='space-y-1'>
                                 <AnimationText text='LPMQ' as='h2' />
-                                <AnimationText
+                                {/* <AnimationText
                                     text='Fantasy Interactive'
                                     as='p'
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
@@ -76,10 +76,10 @@ export default function Home() {
                         <div className='bg-custome-light absolute inset-0 z-0 origin-center scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out'></div>
                         <div className='absolute bottom-0 left-0 w-full h-[1px] bg-custome-light opacity-50'></div>
                         <div className='flex padding-custome gap-6 md:gap-20 relative z-10'>
-                            <AnimationText text='2014' as='h2' />
+                            {/* <AnimationText text='2014' as='h2' /> */}
                             <div className='space-y-1'>
                                 <AnimationText text='APLUSH' as='h2' />
-                                <AnimationText text='Flash Designer' as='p' />
+                                {/* <AnimationText text='Flash Designer' as='p' /> */}
                             </div>
                         </div>
                     </div>
@@ -92,13 +92,13 @@ export default function Home() {
                                 <h2>Art Director</h2>
                                 <p>Fantasy Interactive</p>
                             </div> */}
-                            <AnimationText text='2015' as='h2' />
+                            {/* <AnimationText text='2015' as='h2' /> */}
                             <div className='space-y-1'>
                                 <AnimationText text='MARIMAS' as='h2' />
-                                <AnimationText
+                                {/* <AnimationText
                                     text='Fantasy Interactive'
                                     as='p'
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
@@ -106,13 +106,25 @@ export default function Home() {
 
                 {/* <Client /> */}
             </div>
+            {/* Video */}
+            <div className='relative w-screen h-[50vh] md:h-[114vh] overflow-hidden  flex items-center justify-center'>
+                <Video
+                    src='/assets/videos/oq.mp4'
+                    autoPlay
+                    loop
+                    muted
+                    className='w-full h-full object-cover m-auto scale-200 md:scale-100'
+                />
+            </div>
 
+            {/* end of Video */}
             <div
-                className='relative w-screen h-screen flex items-center justify-center '
+                className='relative w-screen h-[50vh] md:h-screen flex items-center justify-center mt-10 '
                 id='project'
             >
                 <Portfolio />
             </div>
+
             <div id='contact'>
                 <Footer />
             </div>

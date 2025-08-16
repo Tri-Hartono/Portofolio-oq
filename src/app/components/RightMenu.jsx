@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const menuItems = [
     { label: 'ABOUT', id: 'about' },
@@ -10,15 +10,27 @@ const menuItems = [
 ];
 
 export default function RightMenu() {
-    const [soundOn, setSoundOn] = useState(true);
+    const [soundOn, setSoundOn] = useState(false);
+    const audioRef = useRef(null);
 
-    const toggleSound = () => setSoundOn((prev) => !prev);
+    if (!audioRef.current && typeof Audio !== 'undefined') {
+        audioRef.current = new Audio('/assets/sound.mp3');
+        audioRef.current.loop = true;
+    }
+
+    const toggleSound = () => {
+        if (!soundOn) {
+            audioRef.current.play();
+        } else {
+            audioRef.current.pause();
+        }
+        setSoundOn((prev) => !prev);
+    };
 
     const scrollToSection = (id) => {
         const el = document.getElementById(id);
         if (el) {
             el.scrollIntoView({ behavior: 'smooth' });
-            // Update URL hash (optional)
             window.history.pushState(null, '', `#${id}`);
         }
     };
@@ -40,11 +52,15 @@ export default function RightMenu() {
             <h4
                 onClick={toggleSound}
                 className={`cursor-pointer -rotate-90 transition-transform duration-500 hover:scale-105 mb-6 ${
-                    soundOn ? 'text-white' : 'text-red-500'
+                    soundOn ? 'text-color-3' : 'text-white'
                 }`}
             >
                 SOUND{' '}
-                <span className='inline-block transition-all duration-500 text-color-3'>
+                <span
+                    className={`inline-block transition-all duration-500 text-color-3 ${
+                        soundOn ? 'text-color-3' : 'text-white'
+                    }`}
+                >
                     {soundOn ? 'ON' : 'OFF'}
                 </span>
             </h4>

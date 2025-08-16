@@ -15,7 +15,7 @@ import SvgLogo from './SvgLogo';
 export default function LeftMenu() {
     const [hovered, setHovered] = React.useState(false);
     return (
-        <div className='fixed left-0 top-0 z-40 pt-10 pb-20 px-2 mb:px-6 lg:pt-20  lg:px-20   flex items-center justify-between flex-col h-[98vh] md:h-screen'>
+        <div className='fixed left-0 top-0 z-40 pt-10 pb-20 px-2 mb:px-6   lg:px-20   flex items-center justify-between flex-col h-[98vh] md:h-screen'>
             <div
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}

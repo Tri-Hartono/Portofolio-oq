@@ -40,7 +40,7 @@ export default function Portfolio() {
         <div className='w-[80%] md:h-[90%]  z-40 relative'>
             <Carousel
                 setApi={setCarouselApi}
-                opts={{ loop: true }}
+                opts={{ loop: false }}
                 className='  w-full'
             >
                 <CarouselContent x={false}>
@@ -55,10 +55,10 @@ export default function Portfolio() {
                     ))}
                 </CarouselContent>
                 <div className='absolute  left-10 top-1/2 '>
-                    <CarouselPrevious className='text-black bg-custome-light' />
+                    <CarouselPrevious className='bg-transparent border-none rotate-180 ' />
                 </div>
                 <div className='absolute  right-10 top-1/2 '>
-                    <CarouselNext className='text-black bg-custome-light' />
+                    <CarouselNext className='bg-transparent border-none ' />
                 </div>
             </Carousel>
 

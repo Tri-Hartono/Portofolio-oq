@@ -16,20 +16,20 @@ export default function Footer() {
             {/* <Cursor /> Kursor aktif */}
             <div className='text-center relative w-full h-screen flex items-center justify-center'>
                 <div className='relative z-10 mask-target text-[6vw]  uppercase leading-[1]'>
-                    <div className='flex gap-2'>
+                    <div className='flex gap-2 justify-center items-center'>
                         <AnimationText text='GOOD' duration={0.6} as='h1' />
                         <AnimationText
                             text='DESIGN'
-                            className='text-color-3'
+                            className='text-color-3 text-center'
                             duration={1.2}
                             as='h1'
                         />
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex gap-2 justify-center items-center'>
                         <AnimationText text='IS' duration={0.6} as='h1' />
                         <AnimationText
                             text='HONEST'
-                            className='text-color-3'
+                            className='text-color-3 text-center'
                             duration={1.2}
                             as='h1'
                         />

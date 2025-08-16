@@ -1,8 +1,6 @@
 'use client';
 import * as React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
-
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
@@ -10,11 +8,9 @@ const CarouselContext = React.createContext(null);
 
 function useCarousel() {
     const context = React.useContext(CarouselContext);
-
     if (!context) {
         throw new Error('useCarousel must be used within a <Carousel />');
     }
-
     return context;
 }
 
@@ -53,10 +49,10 @@ function Carousel({
 
     const handleKeyDown = React.useCallback(
         (event) => {
-            if (event.key === 'ArrowLeft') {
+            if (event.key === 'Play') {
                 event.preventDefault();
                 scrollPrev();
-            } else if (event.key === 'ArrowRight') {
+            } else if (event.key === 'Play') {
                 event.preventDefault();
                 scrollNext();
             }
@@ -156,6 +152,8 @@ function CarouselPrevious({
 }) {
     const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
+    if (!canScrollPrev) return null; // ⬅️ Hilang saat mentok
+
     return (
         <Button
             data-slot='carousel-previous'
@@ -168,11 +166,10 @@ function CarouselPrevious({
                     : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
                 className
             )}
-            disabled={!canScrollPrev}
             onClick={scrollPrev}
             {...props}
         >
-            <ArrowLeft className='size-4 md:size-6' />
+            <img src='/prev.svg' alt='Previous' className='w-6 md:w-10' />
             <span className='sr-only'>Previous slide</span>
         </Button>
     );
@@ -186,6 +183,8 @@ function CarouselNext({
 }) {
     const { orientation, scrollNext, canScrollNext } = useCarousel();
 
+    if (!canScrollNext) return null; // ⬅️ Hilang saat mentok
+
     return (
         <Button
             data-slot='carousel-next'
@@ -195,14 +194,13 @@ function CarouselNext({
                 'absolute size-10 md:size-14 rounded-full',
                 orientation === 'horizontal'
                     ? 'top-1/2 -right-12 -translate-y-1/2'
-                    : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
+                    : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90 d-none',
                 className
             )}
-            disabled={!canScrollNext}
             onClick={scrollNext}
             {...props}
         >
-            <ArrowRight className='size-4 md:size-6' />
+            <img src='/prev.svg' alt='Next' className='w-6 md:w-10' />
             <span className='sr-only'>Next slide</span>
         </Button>
     );
