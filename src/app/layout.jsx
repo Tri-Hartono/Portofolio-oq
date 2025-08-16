@@ -29,8 +29,8 @@ const myFont = Poppins({
 // });
 
 export const metadata = {
-    title: 'Example Portfolio',
-    description: 'Example Portfolio',
+    title: 'Oq Portfolio',
+    description: 'Oq Portfolio',
 };
 
 export default function RootLayout({ children }) {
